@@ -83,7 +83,7 @@
           new BABYLON.Vector3(1, 1, 0)
         );
         const box = BABYLON.MeshBuilder.CreateBox("box", {});
-        const bounce = new BABYLON.Sound("sound", "", scene);
+        const bounce = new BABYLON.Sound("sound", "/assets/sample.mp3", scene);
         setInterval(() => bounce, 3000);
         box.position.y = 0.5;
         const ground = BABYLON.MeshBuilder.CreateGround("ground", {
